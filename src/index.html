@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>MD 9</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Country List</h1>
+      <form class="search-form">
+        <div class="search-fields-only">
+          <div class="search-form__field">
+            <label for="name" class="field__label">Country name</label>
+            <input
+              type="text"
+              id="name"
+              class="field__input js-search-by-name"
+              autocomplete="off"
+            />
+          </div>
+          <div class="search-form__field">
+            <label for="capital" class="field__label">The capital</label>
+            <input
+              type="text"
+              id="capital"
+              class="field__input js-search-by-capital"
+            />
+          </div>
+          <div class="search-form__field">
+            <label for="currency" class="field__label">Currency name</label>
+            <input
+              type="text"
+              id="currency"
+              class="field__input js-search-by-currency"
+            />
+          </div>
+          <div class="search-form__field">
+            <label for="language" class="field__label">Language name</label>
+            <input
+              type="text"
+              id="language"
+              class="field__input js-search-by-language"
+            />
+          </div>
+        </div>
+        <button type="submit" class="search-button js-search-button" href="">
+          Search
+        </button>
+      </form>
+    </header>
+
+    <section class="row table__row">
+      <table class="table">
+        <thead class="thead">
+          <tr class="thead__row">
+            <th class="table-head formated-column" scope="col table__column">
+              Flag
+            </th>
+            <th class="table-head formated-column" scope="col table__column">
+              Name
+            </th>
+            <th class="table-head formated-column" scope="col table__column">
+              Capital
+            </th>
+            <th class="table-head formated-column" scope="col table__column">
+              Currency
+            </th>
+            <th class="table-head formated-column" scope="col table__column">
+              Language
+            </th>
+          </tr>
+        </thead>
+        <tbody class="table__body" id="tableBody"></tbody>
+      </table>
+    </section>
+
+    <section class="wrapper__load-button">
+      <button class="load-button js-load-button" type="button">
+        Load more
+      </button>
+    </section>
+
+    <script src="/scripts.js"></script>
+  </body>
+</html>
